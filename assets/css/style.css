@@ -1,0 +1,96 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'MADE Outer Sans';
+    src: url('../fonts/MADEOuterSans-Light.woff2') format('woff2'),
+        url('../fonts/MADEOuterSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Outer Sans';
+    src: url('../fonts/MADEOuterSans.woff2') format('woff2'),
+        url('../fonts/MADEOuterSans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Outer Sans';
+    src: url('../fonts/MADEOuterSans-Medium.woff2') format('woff2'),
+        url('../fonts/MADEOuterSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE Outer Sans';
+    src: url('../fonts/../fonts/MADEOuterSans-Bold.woff2') format('woff2'),
+        url('../fonts/MADEOuterSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --primary_color: #FAFF00;
+    --secondary_color: #000000;
+    --tertiary_color: #FFFFFF;
+    --primary_transition: 400ms;
+    --primary_font: 'MADE Outer Sans', 'sans-serif';
+}
+
+body{background-color: var(--secondary_color);font-size: 16px;line-height: normal;font-weight: 300;color: var(--tertiary_color); font-family: var(--primary_font);}
+a{ display: inline-block; transition: var(--primary_transition); text-decoration:none; color:var(--tertiary_color); }
+a:hover, a:focus{text-decoration:none; color:var(--primary_color);}
+
+
+/* Slick - 1.8.1 */
+.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:0}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto}.slick-track:after,.slick-track:before{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir=rtl] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}
+
+/* Slick css */
+.slick-slider .slick-arrow{background:url(https://497316.fs1.hubspotusercontent-na1.net/hubfs/497316/theme-ritter-communication/side_arrow.png) no-repeat center; border:none; z-index:5; position:absolute; top:50%; left:0; width:67px; height:67px; font-size:0px; color:#fff; transition: var(--primary_transition); cursor:pointer;}
+.slick-slider .slick-arrow.slick-next{left:auto; right:0;transform:scale(-1) translateY(50%);}
+
+.slick-slider .slick-dots{text-align:center; padding:0; margin:20px 0 0 0;}
+.slick-slider .slick-dots li{display:inline-block; margin:0 10px;}
+.slick-slider .slick-dots li button{width:16px; height:16px; border-radius:100%; background-color:transparent; border: 2px solid #dadada; padding:0; text-indent:-9999px; cursor:pointer; transition: var(--primary_transition);} 
+.slick-slider .slick-dots li.slick-active button{background-color:#dadada;}
+
+h1,h2,h3,h4,h5,h6{margin-top:0px; font-weight:500; }
+h1 { font-size:64px; line-height: normal; }
+h2 { font-size:48px; line-height: normal; font-weight: 700; }
+h3 { font-size:18px; line-height: normal; }
+/* h4 {  font-size:; line-height: normal; }
+h5 {  font-size:; line-height: normal; }
+h6 {  font-size:; line-height: normal; } */
+
+/* CSS start from here */
+header.header .navbar { padding: 32px 0; }
+header.header .navbar-nav .nav-item +  .nav-item { margin-left: 70px; }
+header.header .navbar-nav a.nav-link { color: var(--tertiary_color); padding: 0; } 
+header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-link:hover { color: var(--primary_color); }
+
+/* CSS end  here */
+
+@media (min-width:576px) { .container{max-width:unset;} }
+@media (min-width:768px) { .container{width:750px;} }
+@media (min-width:992px) { .container{width:970px;} }
+@media (min-width:1200px) { .container{width:1170px;} }
+@media (min-width:1400px) { .container{width:1184px;} }
+
+@media (max-width:1629px){}
+@media (max-width:1429px){}
+@media (max-width:1199px){}
+@media (max-width:991px){
+    
+}
+@media (max-width:767px){
+    header.header #navbarNav { background: var(--secondary_color); }
+    header.header .navbar-nav .nav-item + .nav-item { margin-left: 0; margin-top: 20px; }
+    header.header .navbar-nav { margin-top: 20px; }
+}
