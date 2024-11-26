@@ -70,10 +70,28 @@ h5 {  font-size:; line-height: normal; }
 h6 {  font-size:; line-height: normal; } */
 
 /* CSS start from here */
+.button-1 a { color: var(--secondary_color); background: var(--primary_color); border: 1px solid var(--primary_color); padding: 15px 50px; border-radius: 30px; font-size: 18px; line-height: normal; font-weight: 500; margin-top: 60px; }
+.button-1 a:hover{ background-color: var(--secondary_color); color: var(--primary_color); border: 1px solid var(--primary_color);}
+header.header{position: fixed;top: 0;left: 0;width: 100%;z-index: 10;background: var(--secondary_color);}
 header.header .navbar { padding: 32px 0; }
 header.header .navbar-nav .nav-item +  .nav-item { margin-left: 70px; }
 header.header .navbar-nav a.nav-link { color: var(--tertiary_color); padding: 0; } 
 header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-link:hover { color: var(--primary_color); }
+
+.hero { position: relative; overflow-x: clip;}
+.hero .hero-content{ min-height: 100vh; display: flex;flex-direction: column;justify-content: center; position: relative;}
+.hero .image { display: inline-block; position: absolute; right: 0; top: 0; height: 100%;}
+.hero .image img{height: 100%;}
+.hero .image:before { position: absolute; left: 0; top: 0; width: 540px; background: linear-gradient(to right, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 100%); content: ''; height: 100%; }
+.hero .image:after { position: absolute; right: 0; top: 0; width: 700px; background: linear-gradient(to left, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 100%); content: ''; height: 100%; }
+.hero .image .bootom-shadow { position: absolute; bottom: 0; right: 0; width: 100%; height: 300px; background: linear-gradient(to top, rgba(0,0,0,1) 15%, rgba(255,255,255,0) 100%); }
+
+
+.jr-section { padding: 0 0 120px; }
+.jr-section .row { margin-top: 120px; row-gap: 86px; justify-content: space-between;}
+.jr-section .box { display: flex; align-items: center; }
+.jr-section .box .content-part .content { margin-top: 15px; }
+.jr-section .box .content-part { margin-left: 20px; }
 
 /* CSS end  here */
 
@@ -85,12 +103,22 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
 
 @media (max-width:1629px){}
 @media (max-width:1429px){}
-@media (max-width:1199px){}
+@media (max-width:1199px){
+    .hero .image { right: -260px; }
+}
 @media (max-width:991px){
+    h1 {font-size: 54px;}
+    h2 { font-size: 42px; }
+    .jr-section{padding: 0 0 60px;}
+    .jr-section .row { margin-top: 60px; gap: 50px; }
     
 }
 @media (max-width:767px){
+    h1 { font-size: 40px; }
+    h2 { font-size: 32px; }
     header.header #navbarNav { background: var(--secondary_color); }
     header.header .navbar-nav .nav-item + .nav-item { margin-left: 0; margin-top: 20px; }
     header.header .navbar-nav { margin-top: 20px; }
+    .hero .hero-content { text-align: center; max-width: 560px; margin: 0 auto; }
+    .hero .button-1 a { margin-top: 20px; }
 }
