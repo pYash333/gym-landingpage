@@ -110,15 +110,23 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
 .membership-section .box .box-footer { padding-bottom: 30px; margin-top: auto;}
 .membership-section .box ul li + li{margin-top:15px;}
 
-.about-us{ padding:120px 0;}
+.about-us{ padding:120px 0 90px;}
 .about-us .content { margin-top: 65px; }
 .about-us .content p + p { margin-top: 30px; }
 .about-us .aboutus-slider .box { border-radius: 10px; overflow: hidden; }
-
 .about-us .aboutus-slider .slick-dots li { margin: 0; }
 .about-us .aboutus-slider .slick-dots li + li {margin-left: 8px;}
 .about-us .aboutus-slider .slick-dots li button { width: 40px; height: 2px; border-radius: 2px; }
 .about-us .aboutus-slider .slick-dots { text-align: left; }
+
+.staff-section{padding: 120px 0;}
+.staff-section .row { margin-top: 120px; row-gap: 20px;}
+.staff-section  .box { background: var(--quaternary_color); padding: 22px 18px; border-radius: 20px;}
+.staff-section .box .image { border-radius: 20px; overflow: hidden; height: 100%;}
+.staff-section .box .image img { width: 100%; }
+.staff-section .box h3 { margin-top: 18px; }
+.staff-section .box .social-list { margin-top: 18px; }
+.staff-section .box .social-list ul { padding: 0; margin: 0; display: flex; justify-content: center; gap: 10px; list-style: none; }
 
 /* CSS end  here */
 
@@ -140,13 +148,17 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
     .jr-section .row { margin-top: 60px; gap: 50px; }
     .membership-section { padding: 60px 0; }
     .membership-section .row { margin-top: 30px; }
-    .about-us { padding: 60px 0; }
+    .about-us { padding: 60px 0; overflow-x: clip;}
     .about-us .content { margin-top: 40px; }
     .about-us .aboutus-slider { margin: 40px auto 0; max-width: 440px; width: 100%; }
     .about-us .aboutus-slider .box { margin: 0 10px; }
     .about-us .aboutus-slider .box img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
     .about-us .aboutus-slider .slick-list { overflow: visible; }
     .about-us .aboutus-slider .slick-dots, .about-us .aboutus-slider .slick-arrow{display:none !important;}
+    .staff-section { padding: 60px 0 30px;  overflow: clip;}
+    .staff-section .row { margin-top: 40px; }
+    .staff-section .box{margin: 0 10px;}
+    .staff-section .staff-slider .slick-list{overflow: visible;}
     
 }
 @media (max-width:767px){
@@ -157,7 +169,14 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
     header.header .navbar-nav { margin-top: 20px; }
     .hero .hero-content { text-align: center; max-width: 560px; margin: 0 auto; }
     .hero .button-1 a { margin-top: 20px; }
+    .membership-section {overflow-x: clip;}
     .membership-section .box { max-width: 400px; margin: 0 auto; }
+    .membership-section .row{max-width: 400px;width: 100%;margin: 0 auto;}
+    .membership-section .row .membership-slider .slick-list{overflow: visible;}
+    .membership-section .row .membership-slider .slick-track { display: flex !important; }
+    .membership-section .row .membership-slider .slick-slide { height: inherit;}
+    .membership-section .box{margin: 0 10px;}
     .about-us .title-wrapper { text-align: center; }
     .about-us .content { text-align: center; }
+    .staff-section .staff-slider{max-width: 400px; width: 100%; margin: 0 auto;}
 }
