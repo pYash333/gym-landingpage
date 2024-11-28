@@ -45,7 +45,7 @@
     --primary_font: 'MADE Outer Sans', 'sans-serif';
 }
 
-body{background-color: var(--secondary_color);font-size: 16px;line-height: 28px;font-weight: 300;color: var(--tertiary_color); font-family: var(--primary_font);}
+body{background-color: var(--secondary_color);font-size: 16px;line-height: 28px;font-weight: 300;color: var(--tertiary_color); font-family: var(--primary_font); overflow-x: clip;}
 a{ display: inline-block; transition: var(--primary_transition); text-decoration:none; color:var(--tertiary_color); }
 a:hover, a:focus{text-decoration:none; color:var(--primary_color);}
 
@@ -75,7 +75,7 @@ h6 {  font-size:; line-height: normal; } */
 /* CSS start from here */
 .ul-check ul { margin: 0; padding-left: 32px; list-style: none; }
 .ul-check ul li {position: relative;}
-.ul-check ul li:before { position: absolute; content: ''; width: 20px; height: 20px; top: 0; left: -32px; background: url(../images/check.svg) no-repeat center / 20px 20px; }
+.ul-check ul li:before { position: absolute; content: ''; width: 20px; height: 20px; top: 5px; left: -32px; background: url(../images/check.svg) no-repeat center / 20px 20px; }
 
 .button-1 a { color: var(--secondary_color); background: var(--primary_color); border: 1px solid var(--primary_color); padding: 15px 50px; border-radius: 30px; font-size: 18px; line-height: normal; font-weight: 500; }
 .button-1 a:hover{ background-color: var(--secondary_color); color: var(--primary_color); border: 1px solid var(--primary_color);}
@@ -121,12 +121,22 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
 
 .staff-section{padding: 120px 0;}
 .staff-section .row { margin-top: 120px; row-gap: 20px;}
-.staff-section  .box { background: var(--quaternary_color); padding: 22px 18px; border-radius: 20px;}
-.staff-section .box .image { border-radius: 20px; overflow: hidden; height: 100%;}
-.staff-section .box .image img { width: 100%; }
+.staff-section .box { background: var(--quaternary_color); padding: 22px 18px; border-radius: 20px; height: 100%;}
+.staff-section .box .image { border-radius: 20px; overflow: hidden; height: 227px;}
+.staff-section .box .image img { width: 100%;height: 100%; object-fit: cover; object-position: top; }
 .staff-section .box h3 { margin-top: 18px; }
 .staff-section .box .social-list { margin-top: 18px; }
 .staff-section .box .social-list ul { padding: 0; margin: 0; display: flex; justify-content: center; gap: 10px; list-style: none; }
+.staff-section .box .social-list ul li a:hover{transform: translateY(-4px); }
+
+footer.footer { padding: 120px 0 80px; }
+footer.footer .content { margin-top: 26px; }
+footer.footer .address { margin-top: 26px; }
+footer.footer .contact-link { margin-top: 30px; }
+footer.footer .contact-link a { display: flex; margin-top: 8px; }
+footer.footer .contact-link a .icon { margin-right: 10px; }
+footer.footer  .footer-socials { margin-top: 24px; display: flex; gap: 16px; align-items: center; }
+footer.footer  .footer-socials a:hover{transform: translateY(-4px); }
 
 /* CSS end  here */
 
@@ -159,6 +169,7 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
     .staff-section .row { margin-top: 40px; }
     .staff-section .box{margin: 0 10px;}
     .staff-section .staff-slider .slick-list{overflow: visible;}
+    footer.footer { padding: 60px 0; }
     
 }
 @media (max-width:767px){
@@ -170,8 +181,8 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
     .hero .hero-content { text-align: center; max-width: 560px; margin: 0 auto; }
     .hero .button-1 a { margin-top: 20px; }
     .membership-section {overflow-x: clip;}
-    .membership-section .box { max-width: 400px; margin: 0 auto; }
-    .membership-section .row{max-width: 400px;width: 100%;margin: 0 auto;}
+    .membership-section .box { max-width: 400px; margin: 0 auto;}
+    .membership-section .row{max-width: 400px;width: 100%;margin: 30px auto 0;}
     .membership-section .row .membership-slider .slick-list{overflow: visible;}
     .membership-section .row .membership-slider .slick-track { display: flex !important; }
     .membership-section .row .membership-slider .slick-slide { height: inherit;}
@@ -179,4 +190,10 @@ header.header .navbar-nav a.nav-link.active, header.header .navbar-nav a.nav-lin
     .about-us .title-wrapper { text-align: center; }
     .about-us .content { text-align: center; }
     .staff-section .staff-slider{max-width: 400px; width: 100%; margin: 0 auto;}
+    footer.footer .row{text-align: center;}
+    footer.footer .contact-link a{justify-content: center;}
+    footer.footer .footer-socials{justify-content: center;}
+    footer.footer .row > div{margin-top: 30px;}
+    footer.footer .address { margin-top: 10px; }
+    footer.footer .contact-link { margin-top: 10px; }
 }

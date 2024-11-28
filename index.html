@@ -6,6 +6,7 @@
     <!-- Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/css/animations.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>GYM24</title>
   </head>
@@ -39,7 +40,7 @@
           </nav>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero animatedParent animateOnce">
         <div class="image">
           <div class="bootom-shadow"></div>
           <img src="assets/images/hero-img.jpg" alt="hero-img" />
@@ -48,8 +49,8 @@
           <div class="row">
             <div class="col-md-9 col-lg-10 col-xl-7">
               <div class="hero-content">
-                <h1>Free trial session <br> with a trainer</h1>
-                <div class="button-1">
+                <h1 class="animated fadeInLeftShort">Free trial session <br> with a trainer</h1>
+                <div class="button-1 animated fadeInLeftShort">
                   <a href="javascript:;">Detailed</a>
                 </div>
               </div>
@@ -60,10 +61,10 @@
       <section class="jr-section">
         <div class="container">
           <div class="title-wrapper">
-            <h2>Reasons to join</h2>            
+            <h2 class="animated fadeInDownShort">Reasons to join</h2>            
           </div>
-          <div class="row">
-            <div class="col-md-5">
+          <div class="row animatedParent animateOnce" data-sequence='300'>
+            <div class="col-md-5  animated fadeInUpShort" data-id='1'>
               <div class="box">
                 <div class="icon"><img src="assets/images/icon_line.svg" alt="icon_line"></div>
                 <div class="content-part">
@@ -72,7 +73,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5  animated fadeInUpShort" data-id='2'>
               <div class="box">
                 <div class="icon"><img src="assets/images/doumbels-icon.svg" alt="doumbels-icon"></div>
                 <div class="content-part">
@@ -81,7 +82,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5  animated fadeInUpShort" data-id='3'>
               <div class="box">
                 <div class="icon"><img src="assets/images/ropes-icon.svg" alt="ropes-icon"></div>
                 <div class="content-part">
@@ -90,7 +91,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5  animated fadeInUpShort" data-id='4'>
               <div class="box">
                 <div class="icon"><img src="assets/images/clock-icon.svg" alt="clock-icon"></div>
                 <div class="content-part">
@@ -104,13 +105,13 @@
       </section>
       <section class="membership-section">
         <div class="container">
-          <div class="title-wrapper">
-            <h2 class="text-center">Gym membership</h2>            
+          <div class="title-wrapper animatedParent animateOnce">
+            <h2 class="text-center animated fadeInDownShort">Gym membership</h2>            
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center" >
             <div class="col-lg-11 col-md-12">
-              <div class="row gx-lg-5 gx-4 membership-slider">
-                <div class="col-lg-4 col-md-6">
+              <div class="row gx-lg-5 gx-4 membership-slider animatedParent animateOnce" data-sequence='300'>
+                <div class="col-lg-4 col-md-6 animated fadeInUpShort" data-id="1">
                   <div class="box">
                     <div class="box-header text-center">
                       <h3>Pass ‘Trial’ </h3>
@@ -132,7 +133,7 @@
 
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 animated fadeInUpShort" data-id="2">
                   <div class="box">
                     <div class="box-header text-center">
                       <h3>Pass ‘Easy Start’ </h3>
@@ -155,7 +156,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 animated fadeInUpShort" data-id="3">
                   <div class="box">
                     <div class="box-header text-center">
                       <h3>Pass ‘Free Time’ </h3>
@@ -177,7 +178,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 animated fadeInUpShort" data-id="4">
                   <div class="box">
                     <div class="box-header text-center">
                       <h3>Pass ‘1 Month 24/7’ </h3>
@@ -198,7 +199,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 animated fadeInUpShort" data-id="5">
                   <div class="box">
                     <div class="box-header text-center">
                       <h3>Pass ‘In Shape (AM)’ </h3>
@@ -221,7 +222,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 animated fadeInUpShort" data-id="6">
                   <div class="box">
                     <div class="box-header text-center">
                       <h3>Pass ‘In Shape (PM)’ </h3>
@@ -252,18 +253,18 @@
       <section class="about-us">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-lg-5 col-12">
+            <div class="col-lg-5 col-12 animatedParent animateOnce">
               <div class="title-wrapper">
-                <h2>About us</h2>            
+                <h2 class="animated fadeInUpShort">About us</h2>            
               </div>
-              <div class="content">
+              <div class="content animated fadeInUpShort">
                 <p>Gym24 is a leading fitness center located near Grushevka metro station, offering over 1500 sq. m of space dedicated to top-of-the-line workout equipment from leading brands such as Hammer Strength, Life Fitness, and TechnoGym.</p>
                 <p>With affordable membership options, Gym24 is accessible to everyone who wants to reach their fitness goals, whether it's building strength, increasing endurance, or losing weight.</p>
                 <p>Certified trainers at Gym24 provide expert guidance and support to develop personalized workout plans tailored to each individual's needs and goals.</p>
               </div>
             </div>
-            <div class="col-lg-6 col-12">
-              <div class="slider aboutus-slider">
+            <div class="col-lg-6 col-12 animatedParent animateOnce">
+              <div class="slider aboutus-slider animated fadeInUpShort">
                 <div>
                   <div class="box">
                     <img src="assets/images/about-us-img.jpg" alt="about-us-img">
@@ -291,11 +292,11 @@
       </section>
       <section class="staff-section">
         <div class="container">
-          <div class="title-wrapper">
-            <h2 class="text-center">Trainers staff</h2>            
+          <div class="title-wrapper animatedParent animateOnce">
+            <h2 class="text-center animated fadeInDownShort">Trainers staff</h2>            
           </div>
-          <div class="row staff-slider">
-            <div class="col-lg-3 col-md-4">
+          <div class="row staff-slider animatedParent animateOnce" data-sequence='300'>
+            <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="1">
               <div class="box">
                 <div class="image">
                   <img src="assets/images/staff-img1.jpg" alt="staff-img1">
@@ -322,7 +323,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="2">
               <div class="box">
                 <div class="image">
                   <img src="assets/images/staff-img2.jpg" alt="staff-img2">
@@ -350,7 +351,7 @@
               </div>
             </div>
             
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="3">
               <div class="box">
                 <div class="image">
                   <img src="assets/images/staff-img3.jpg" alt="staff-img3">
@@ -377,7 +378,7 @@
                 </div>
               </div>
             </div>
-              <div class="col-lg-3 col-md-4">
+              <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="4">
                 <div class="box">
                   <div class="image">
                     <img src="assets/images/staff-img4.jpg" alt="staff-img4">
@@ -404,7 +405,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4">
+              <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="5">
                 <div class="box">
                   <div class="image">
                     <img src="assets/images/staff-img5.jpg" alt="staff-img5">
@@ -431,7 +432,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4">     
+              <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="6">     
                 <div class="box">
                   <div class="image">
                     <img src="assets/images/staff-img6.jpg" alt="staff-img6">
@@ -458,7 +459,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4">
+              <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="7">
                 <div class="box">
                   <div class="image">
                     <img src="assets/images/staff-img7.jpg" alt="staff-img7">
@@ -485,7 +486,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4">
+              <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="8">
                 <div class="box">
                   <div class="image">
                     <img src="assets/images/staff-img8.jpg" alt="staff-img8">
@@ -516,11 +517,49 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-between animatedParent animateOnce" data-sequence='300'>
+          <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="1">
+            <div class="logo">
+              <a href="javascript:;"><img src="assets/images/logo.svg" alt="logo"></a>
+            </div>
+            <div class="content">Build strength and confidence at our gym with state-of-the-art equipment, personalized training, and a motivating community</div>
+          </div>
+          <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="2">
+            <h3>Address</h3>
+            <div class="address">
+              Republic of Belarus<br>Minsk city<br>Dzerzhinsky Avenue 15
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 animated fadeInUpShort" data-id="3">
+            <h3>Contact</h3>
+            <div class="contact-link">
+              <a href="javascript:;">
+                <div class="icon"><img src="assets/images/icon_call.svg" alt="icon_call"></div>
+                +375(44)-777-24-12
+              </a>
+              <a href="javascript:;">
+                <div class="icon"><img src="assets/images/icon_email.svg" alt="icon_email"></div>
+                gym24@gmail.com
+              </a>
+            </div>
+            <div class="footer-socials">
+              <a href="#"><img src="assets/images/instagram.svg" alt="instagram"></a>
+              <a href="#"><img src="assets/images/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="assets/images/twitter.svg" alt="twitter"></a>
+              <a href="#"><img src="assets/images/youtube.svg" alt="youtube"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
