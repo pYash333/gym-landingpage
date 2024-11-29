@@ -196,6 +196,9 @@ footer.footer  .footer-socials a:hover{transform: translateY(-4px); }
     footer.footer .contact-link a{justify-content: center;}
     footer.footer .footer-socials{justify-content: center;}
     footer.footer .row > div{margin-top: 30px;}
-    footer.footer .address { margin-top: 10px; }
+    footer.footer .address { margin-top: 10px;text-align: center; }
     footer.footer .contact-link { margin-top: 10px; }
+    footer.footer .logo { text-align: center; }
+    footer.footer  .content {text-align: center;}
+    footer.footer h3 { text-align: center; }
 }
