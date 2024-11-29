@@ -190,6 +190,8 @@ footer.footer  .footer-socials a:hover{transform: translateY(-4px); }
     .about-us .title-wrapper { text-align: center; }
     .about-us .content { text-align: center; }
     .staff-section .staff-slider{max-width: 400px; width: 100%; margin: 0 auto;}
+    .staff-section .staff-slider .fadeInUpShort, .membership-section .membership-slider .fadeInUpShort{opacity: 1;}
+    .membership-section .membership
     footer.footer .row{text-align: center;}
     footer.footer .contact-link a{justify-content: center;}
     footer.footer .footer-socials{justify-content: center;}

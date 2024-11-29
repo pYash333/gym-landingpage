@@ -36,7 +36,6 @@ $(function () {
         focusOnSelect: true,
         infinite: true,
         loop: true,
-        adaptiveHeight: true
       });
     }
   }
